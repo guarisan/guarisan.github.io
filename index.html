@@ -1,126 +1,71 @@
-<!-- =^..^= Created by JZimz. Learn more at jzimz.com -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>guarisan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Sora:wght@300&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Roboto Slab', serif;
-        font-weight: 300;
-        color: #FFFFFF;
-        text-align: center;
-        background-color: #000b3a;
-
-      }
-      strong {
-        font-weight: 600;
-      }
-
-      #page-home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 60px;
-      }
-
-      .profile-photo {
-        width: 130px;
-        height: 130px;
-        background-color: white;
-        border-radius: 50%;
-        background-repeat: no-repeat;
-        background-image: url('');
-        background-size: 100%;
-      }
-      .profile-photo:hover {
-        background-image: url('assets/profile-alt.png');
-        background-size: 100%;
-      }
-
-      .profile-text h1 {
-        font-family: 'Krona One', sans-serif;
-        font-weight: 900;
-        margin-top: 0.5em;
-        font-size: 2em;
-        text-align: center;
-        font-color: #000b3a;
-      }
-
-      .page-body {
-        padding: 0 20px;
-        max-width: 520px;
-      }
-
-      .linkage {
-        font-family: 'Roboto', sans-serif;
-        margin-top: 40px;
-        text-align: center;
-        display: flex;
-        justify-content: space-evenly;
-      }
-
-      .linkage .link-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none;
-        font-weight: 400;
-        color: #FFFFFF;
-      }
-
-      .linkage .icon {
-        height: 90px;
-        width: 90px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-        background-color: #FFFFFF;
-      }
-
-      @media screen and (max-width: 400px) {
-        .linkage .icon {
-          height: 64px;
-          width: 64px;
-        }
-      }
-     
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Emerson | Linktree</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/43749971" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <div id="app">
-      <div id="page-home">
-        <div class="profile-photo"></div>
-        <div class="profile-text">
-          <h1>guarisan</h1>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="https://avatars0.githubusercontent.com/u/43749971" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://avatars0.githubusercontent.com/u/43749971" target="_blank">
+            <img src="https://avatars0.githubusercontent.com/u/43749971" alt="Profile Picture">
+          </a>
         </div>
-        <div class="page-body">
-          <div class="about">
-         / content creator / 📧 / contacto: info@guarisan.ar /
-          </div>
-          <div class="linkage">
-            <a href="https://www.twitch.tv/guarisan" class="link-item twitch">
-              <div class="label">Twitch</div>
-            </a>
-            <a href="https://link.guarisan.ar/discord" class="link-item discord">
-              <div class="label">Discord</div>
-            </a>
-            <a href="https://www.instagram.com/guarisan/"
-              class="link-item instagram">
-              <div class="label">Instagram</div>
-            </a>
-            <a href="https://twitter.com/guarisan_" class="link-item twitter">
-              <div class="label">Twitter</div>
-            </a>
-          </div>
+        <div class="popup-quote">
+          But... the sensation that I've lost something lingers for a longtime after I wake up.
         </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
       </div>
+    </div>
+
+    <div id="userName">
+      @johnggli
+    </div>
+
+    <div id="links">
+      <a class="link" href="https://github.com/johnggli" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+      <a class="link" href="https://www.linkedin.com/in/johnggli" target="_blank">
+        <i class="fab fa-linkedin">&nbsp;</i>Linkedin
+      </a>
+      <a class="link" href="https://www.facebook.com/johnggli" target="_blank">
+        <i class="fab fa-facebook">&nbsp;</i>Facebook
+      </a>
+      <a class="link" href="https://www.instagram.com/johnggli" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+      <a class="link" href="https://twitter.com/johnggli" target="_blank">
+        <i class="fab fa-twitter">&nbsp;</i>Twitter
+      </a>
+      <a class="link" href="https://myanimelist.net/profile/johnggli" target="_blank">
+        <i class="fa fa-play-circle">&nbsp;</i>MyAnimeList
+      </a>
+    </div>
+
+    <div id="hashtag">
+      #BeHappy❤
     </div>
   </body>
 </html>
